@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "3554cf32-4ab7-4bdb-9915-c7f3570d37d2",
+		"name": "Assignment 8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34113326"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "create book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"new bookkkkkk\",\r\n    \"content\":\"zzzzzzzzz\",\r\n    \"author\":\"ahmed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/book/create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"book",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/book/get",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"book",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get book with id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/book/get_id/66832c200958679787acbb5c",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"book",
+								"get_id",
+								"66832c200958679787acbb5c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update book",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"newwwwww book\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/book/updatebook/66832c200958679787acbb5c",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"book",
+								"updatebook",
+								"66832c200958679787acbb5c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/book/deletebook/66832c200958679787acbb5c",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"book",
+								"deletebook",
+								"66832c200958679787acbb5c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ahmed\",\r\n    \"bio\":\"zzzzzzzzzz\",\r\n    \"books\":\"66832af3aaf5869e5ed799dc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/author/create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"author",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/author/get",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"author",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get wit id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/author/get_withId/66839ff7db0b8312cc9f42e4",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"author",
+								"get_withId",
+								"66839ff7db0b8312cc9f42e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ahmed alaaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/author/update/66839ff7db0b8312cc9f42e4",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"author",
+								"update",
+								"66839ff7db0b8312cc9f42e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/author/delete/66839ff7db0b8312cc9f42e4",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"author",
+								"delete",
+								"66839ff7db0b8312cc9f42e4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
